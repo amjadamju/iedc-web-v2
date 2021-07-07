@@ -1,20 +1,24 @@
-<section id="page-title" data-parallax-image="<?=base_url()?>assets/front/images/banner/community.jpg">
-	<div class="container">
-		<div class="page-title">
-			<h1>Community</h1>
-		</div>
-		<div class="breadcrumb">
-			<ul>
-				<li><a href="<?=base_url()?>">Home</a> </li>
+<style>
+            .banner-img-height {
+				height: 380px;
+            }
 
-				<li class="active"><a href="<?=base_url()?>community">Community</a> </li>
-			</ul>
-		</div>
-	</div>
+            @media screen and (max-width: 600px) {
+                .banner-img-height {
+                    height: 150px;
+                }
+            }
+
+            .first-letter {
+                font-size: 80px;
+            }
+
+            .custom-para {
+                line-height: 40px;
+            }
+        </style>
+<section class="banner-img-height" id="page-title" style="background-color: #181918;" data-parallax-image="<?= base_url() ?>assets/front/images/banner/COMMUNITIES.png">
 </section>
-
-
-
 <section id="page-content">
 	<div class="container">
 
@@ -32,7 +36,7 @@
 				<div class="post-item-wrap">
 					<div class="post-image">
 						<a href="#">
-							<img src="<?=base_url()?>assets/front/images/community/sig.jpg" alt="" class="img-fluid" alt="open-source" class="img-fluid" style="height: 150px ; width: 200px;">
+							<img src="<?= base_url() ?>assets/front/images/community/sig.jpg" alt="" class="img-fluid" alt="open-source" class="img-fluid" style="height: 150px ; width: 200px;">
 						</a>
 					</div>
 					<div class="post-item-description">
@@ -49,13 +53,14 @@
 				<div class="post-item-wrap">
 					<div class="post-image">
 						<a href="#">
-							<img src="<?=base_url()?>/assets/front/images/community/maker-space.jpg" alt="" class="img-fluid" alt="maker-space" class="img-fluid" style="height: 150px ; width: 200px;">
+							<img src="<?= base_url() ?>/assets/front/images/community/maker-space.jpg" alt="" class="img-fluid" alt="maker-space" class="img-fluid" style="height: 150px ; width: 200px;">
 						</a>
 					</div>
 					<div class="post-item-description">
 						<h2><a href="#">Maker Community
 							</a></h2>
-						<p>A Community intended to promote the maker culture among the students. Maker space running under the community provides basic infrastructure & resources for the students to transform their ideas in to reality.The Makers space equips modern machineries and rapid proto typing tools to support the young minds with advanced technological development</p>
+						<p>A community with an intention to promote the maker culture among the students. The Maker space provides basic infrastructure and resources like modern machineries and rapid prototyping tools for the students to transform their ideas into reality.</p>
+						<a href="<?= base_url() ?>user/dashboard/maker-library">Go to maker library <i class="fa fa-arrow-right"></i> </a>
 					</div>
 				</div>
 			</div>
